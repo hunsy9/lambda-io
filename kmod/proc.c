@@ -17,7 +17,7 @@ static struct block_device *nvme_bdev;
 static struct kmem_cache *nvme_data_buf_cache;
 static mempool_t *nvme_data_buf_pool;
 
-#define MAX_NR_EXTENTS 32
+#define MAX_NR_EXTENTS 1024
 struct back_file {
     u32 ufd;
     u32 nr_extents;
